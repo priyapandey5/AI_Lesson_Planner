@@ -23,7 +23,7 @@ google-api-core==2.30.2
 google-api-python-client==2.194.0
 google-auth==2.49.1
 google-auth-httplib2==0.3.1
-google-generativeai==0.8.6
+google-generativeai
 googleapis-common-protos==1.74.0
 grpcio==1.80.0
 grpcio-status==1.71.2
@@ -43,10 +43,10 @@ mdurl==0.1.2
 multidict==6.7.1
 narwhals==2.18.1
 numpy==1.26.4
-openai==2.30.0
+openai==0.28.0
 packaging==23.2
 pandas==2.3.3
-pillow>=10.3.0
+pillow
 propcache==0.4.1
 proto-plus==1.27.2
 protobuf==5.29.6
@@ -61,7 +61,7 @@ Pygments==2.20.0
 Pympler==1.1
 pyparsing==3.3.2
 python-dateutil==2.9.0.post0
-python-dotenv==1.2.2
+python-dotenv
 pytz==2026.1.post1
 pytz-deprecation-shim==0.1.0.post0
 pywin32==311
@@ -76,7 +76,7 @@ streamlit==1.24.1
 tenacity==8.5.0
 toml==0.10.2
 tornado==6.5.5
-tqdm==4.67.3
+tqdm
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 tzdata==2025.3
