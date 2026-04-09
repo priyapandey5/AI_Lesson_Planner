@@ -10,8 +10,7 @@ load_dotenv()  # load .env file
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
-# 3️⃣ Port config (for Render)
-port = int(os.environ.get("PORT", 8501))
+
 
 # Define the system message for lesson generation
 system_message = """
@@ -37,7 +36,7 @@ NOTE: The output should be in a detailed lesson plan format for easy reading and
 delimiter = "####"
 
 # Function to get a response from OpenAI based on messages
-@st.cache_data
+
 def get_completion_from_messages(messages):
     try:
         # Combine messages into single prompt
