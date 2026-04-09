@@ -1,93 +1,220 @@
-# Lesson Plan Generator
+# 📚 Lesson Plan Generator 
 
-## Overview
-The Lesson Plan Generator is a Streamlit-based web application that helps educators create comprehensive lesson plans using OpenAI's GPT model. This tool streamlines the process of lesson planning by generating structured, detailed plans based on user input.
+## 🚀 Overview
 
-## Features
-- Interactive web interface for inputting lesson details
-- Generates detailed lesson plans including learning outcomes, experiences, and assessments
-- Utilizes OpenAI's GPT model for intelligent content generation
-- Allows downloading of generated lesson plans in JSON format
+The **Lesson Plan Generator** is a Streamlit-based web application that helps educators create structured and comprehensive lesson plans using Google's **Gemini AI model**.
 
-## Prerequisites
-Before you begin, ensure you have met the following requirements:
-- Python 3.7 or higher installed
-- An OpenAI API key (you can obtain one from [OpenAI's website](https://openai.com))
+This tool simplifies lesson planning by automatically generating detailed plans based on user inputs like subject, grade, and duration.
 
-## Installation
+---
 
-1. Clone this repository or download the source code.
+## ✨ Features
 
-2. Navigate to the project directory:
-   ```
-   cd path/to/lesson-plan-generator
-   ```
+* Interactive web interface for entering lesson details
+* Generates structured lesson plans including:
 
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+  * Learning Outcomes
+  * Learning Experiences
+  * Assessment
+  * Reflection
+* Powered by **Google Gemini AI** for intelligent content generation
+* Option to download generated lesson plans in JSON format
+* Fast and lightweight deployment-ready app
 
-## Setting Up the OpenAI API Key
+---
 
-You have two options for providing your OpenAI API key:
+## 🧰 Prerequisites
 
-1. **Environment Variable (Recommended):**
-   - On Windows:
-     ```
-     set OPENAI_API_KEY=your-api-key-here
-     ```
-   - On macOS or Linux:
-     ```
-     export OPENAI_API_KEY=your-api-key-here
-     ```
+Before you begin, ensure you have:
 
-2. **User Input:**
-   If you don't set the environment variable, the app will prompt you to enter the API key when you run it.
+* Python **3.8 or higher**
+* A **Google Gemini API Key** (from Google AI Studio)
 
-## Usage
+---
 
-1. Run the Streamlit app:
-   ```
-   streamlit run app.py
-   ```
+## ⚙️ Installation
 
-2. Open your web browser and go to the address shown in the terminal (usually `http://localhost:8501`).
+### 1️⃣ Clone the Repository
 
-3. If you didn't set the API key as an environment variable, you'll be prompted to enter it.
+```bash
+git clone https://github.com/priyapandey5/AI_Lesson_Planner.git
+cd AI_Lesson_Planner
+```
 
-4. Fill in the lesson details in the provided form:
-   - Lesson Title
-   - Subject
-   - Grade
-   - Duration
-   - Key Vocabulary
-   - Supporting Materials and Resources
+---
 
-5. Click the "Generate Lesson Plan" button.
+### 2️⃣ Install Dependencies
 
-6. Review the generated lesson plan displayed on the page.
+```bash
+pip install -r requirements.txt
+```
 
-7. Optionally, download the lesson plan as a JSON file using the provided button.
+---
 
-## Customization
+## 🔑 Setting Up the API Key
 
-You can customize the system message or other parameters in the `app.py` file to adjust the behavior of the lesson plan generation.
+You need to set your **Gemini API Key**.
 
-## Troubleshooting
+### ✅ Option 1: Environment Variable (Recommended)
 
-- If you encounter any issues with the OpenAI API, ensure that your API key is correct and that you have sufficient credits.
-- For any other issues, check the console output for error messages.
+#### On Windows:
 
-## Contributing
+```bash
+set GEMINI_API_KEY=your-api-key-here
+```
 
-Contributions to the Lesson Plan Generator are welcome. Please feel free to submit a Pull Request.
+#### On macOS/Linux:
 
-## License
+```bash
+export GEMINI_API_KEY=your-api-key-here
+```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
 
-## Acknowledgments
+### ✅ Option 2: `.env` File
+
+Create a `.env` file in your project root:
+
+```env
+GEMINI_API_KEY=your-api-key-here
+```
+
+---
+
+## ▶️ Usage
+
+Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+Open your browser and go to:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📝 How to Use
+
+Fill in the form fields:
+
+* Lesson Title
+* Subject
+* Grade
+* Duration
+* Key Vocabulary
+* Supporting Materials & Resources
+
+👉 Click **"Generate Lesson Plan"**
+
+---
+
+## 📊 Output
+
+The app will generate a structured lesson plan including:
+
+* **Learning Outcomes**
+
+  * Knowledge
+  * Skills
+  * Understanding
+
+* **Learning Experiences**
+
+  * Prepare
+  * Plan
+  * Investigate
+  * Apply
+  * Connect
+  * Evaluate
+
+* **Assessment**
+
+* **Reflection**
+
+---
+
+## 💾 Download Option
+
+You can download the generated lesson plan as a **JSON file** for future use.
+
+---
+
+## 🛠️ Customization
+
+You can modify the AI behavior by editing:
+
+```bash
+app.py
+```
+
+* Change prompt structure
+* Adjust output format
+* Improve response quality
+
+---
+
+## 🐞 Troubleshooting
+
+### ❌ API Errors
+
+* Check if your `GEMINI_API_KEY` is correct
+* Ensure your API quota is available
+
+### ❌ App Not Running
+
+* Verify all dependencies are installed
+* Check terminal logs for errors
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🙏 Acknowledgments
+
+* Google Gemini AI for content generation
+* Streamlit for the web app framework
+
+---
+
+## 🌍 Deployment
+
+This app can be easily deployed on platforms like **Render** using:
+
+```bash
+streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+```
+
+---
+
+## 🎉 Final Note
+
+This project is beginner-friendly and perfect for:
+
+* Students
+* Educators
+* Developers learning AI integration
+
+---
+
+💡 *Build, Learn, and Deploy with AI!*
+
+
+
 
 - OpenAI for providing the GPT model
 - Streamlit for the web application framework
