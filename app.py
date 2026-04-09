@@ -112,8 +112,3 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 st.markdown("---")
 st.markdown("Created with ❤️ by Your AI Lesson Planner")
 
-if __name__ == "__main__":
-    import streamlit.web.cli as stcli
-    import sys
-    sys.argv = ["streamlit", "run", "app.py", "--server.port", str(port), "--server.address", "0.0.0.0"]
-    sys.exit(stcli.main())
